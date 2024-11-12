@@ -2,6 +2,7 @@ var text = document.getElementsByClassName("text");
 var body = document.body;
 var images = document.querySelectorAll(".image-container img")
 
+
 function enlargeText(){
     for (var i=0; i < text.length; i++){
         text[i].style.fontSize = "xx-large";
@@ -19,6 +20,12 @@ function accesibleColors(){
         text[i].style.color = "#FFFAF0";
     }
     body.style.backgroundColor = "#5A5A5A";
+    
+    // set accessible color for displayed alt text paragraphs if any
+    var altTexts = document.querySelectorAll(".alt-text");
+    altTexts.forEach(altText => {
+        altText.style.color = "#FFFAF0"; 
+    });
 }
 
 function resetColors(){
@@ -26,6 +33,11 @@ function resetColors(){
         text[i].style.removeProperty("color");
     }
     body.style.removeProperty("background-color");
+
+    var altTexts=document.querySelectorAll(".alt-text");
+    altTexts.forEach(altText => {
+        altText.style.removeProperty("color");
+    })
 }
 
 function displayAlt(){
