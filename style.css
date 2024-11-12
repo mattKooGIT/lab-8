@@ -1,0 +1,25 @@
+/* Style for making images inline and responsive */
+img{
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+/*fix gap error*/
+img[alt="a slice of matcha cheesecake with strawberries on top and an oreo layer on the bottom"]{
+    margin-left: 40px;
+}
+
+.image-container figure {
+    display: inline-block;
+    text-align: center; /* Centers the caption under each image */
+}
+
+img[alt="a box of waffle fries and hot fried chicken with bread underneath"] {
+    width: 70%; /* Match the width of the other images */
+    height: auto;
+}

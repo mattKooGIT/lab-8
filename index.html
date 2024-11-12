@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab 8</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <h1 class="text">Lab 8</h1>
+        <section>
+            <h2 class="text">part a</h2>
+            <figure>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1905239306&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                <figcaption>sombr. (2024, August 30). Do I ever cross your mind. SoundCloud. https://soundcloud.com/sombrsongs/do-i-ever-cross-your-mind?in=trending-music-ca%2Fsets%2Findie&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing</figcaption>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+            </figure>
+        </section>
+        <section>
+            <h2 class="text">part b</h2>
+            <button onclick="enlargeText()">Click to Enlarge</button>
+            <button onclick="reset()">Reset Size</button>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, eros nec venenatis scelerisque, libero justo efficitur mauris, nec porta neque enim a leo. Sed rutrum facilisis mollis. Aliquam ut leo purus. Cras vitae venenatis libero. Praesent sed quam dignissim, congue ex id, condimentum ipsum. In consequat ante in commodo porta. Maecenas pulvinar vitae eros nec auctor. Integer lacinia neque a erat tempor ultricies. Nunc lacinia imperdiet lorem eget tempor. Vivamus vestibulum ultricies ligula, non ultrices est viverra sed. Proin rutrum diam blandit metus tincidunt, non auctor sem sodales. Pellentesque dolor tortor, condimentum dapibus elementum vel, tristique ut nulla. Vestibulum vitae viverra nulla.</p>
+        </section>
+        <section>
+            <h2 class="text">part c</h2>
+            <button onclick="accesibleColors()">Accesible Colors</button>
+            <button onclick="resetColors()">Reset Colors</button>
+        </section>
+        <section>
+            <h2 class="text">part 4</h2>
+            <button onclick="displayAlt()">Alt-text</button>
+            <button onclick="turnOffAlt()">Turn Off Alt</button>
+            <div class="image-container">
+                <figure>
+                    <img src="assets/jigae.jpg" alt="a bowl of hot kimchi jigae with a bowl of white rice and side dishes">
+                    <figcaption class="text">date: october 10<br/>location: seoulicious</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/matchacake.jpg" alt="a slice of matcha cheesecake with strawberries on top and an oreo layer on the bottom">
+                    <figcaption class="text">date: november 4<br/>location: home</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/penny's.jpg" alt="a box of waffle fries and hot fried chicken with bread underneath">
+                    <figcaption class="text" id="pennys">date: november 5<br/>location: the path</figcaption>
+                </figure>
+            </div>
+        </section>
+        <script src="test.js"></script>
+    </body>
+</html>
